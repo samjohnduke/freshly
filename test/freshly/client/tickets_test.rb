@@ -75,6 +75,7 @@ class TicketsTest < Minitest::Test
   end
 
   def test_can_list_all_time_entries
+    skip("unable to test without sufficent permissions")
     response = @client.ticket_time_entries 4
     refute_nil response
     assert_kind_of Array, response

@@ -23,7 +23,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 15 Mar 2016 04:02:54 GMT
+      - Tue, 15 Mar 2016 21:44:18 GMT
       Expires:
       - Wed, 13 Oct 2010 00:00:00 UTC
       Pragma:
@@ -38,13 +38,332 @@ http_interactions:
       X-Rack-Cache:
       - miss
       X-Ratelimit-Remaining:
+      - '2997'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - ee634018b315c8ef828e11c5df59f681
+      Content-Length:
+      - '28'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 21:44:18 GMT
+- request:
+    method: post
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets
+    body:
+      encoding: UTF-8
+      string: '{"name":"Sam Duke","email":"sam@skylarklabs.com","subject":"testing
+        the api","description":"I am testing the api","source":2,"status":2,"priority":1}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 21:46:23 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Location:
+      - https://skylarklabs.freshdesk.com/api/v2/tickets/4
+      Pragma:
+      - no-cache
+      Status:
+      - 201 Created
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2996'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - cc981e4b36d53e5ec17cfb80ffcd91c8
+      Content-Length:
+      - '603'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"cc_emails":[],"fwd_emails":[],"reply_cc_emails":[],"description":"I
+        am testing the api","description_html":"<div>I am testing the api</div>","fr_escalated":false,"spam":false,"email_config_id":null,"group_id":null,"priority":1,"requester_id":9007025965,"responder_id":null,"source":2,"status":2,"subject":"testing
+        the api","company_id":null,"custom_fields":{},"to_emails":null,"product_id":null,"id":4,"type":null,"created_at":"2016-03-15T21:46:23Z","updated_at":"2016-03-15T21:46:23Z","due_by":"2016-03-18T21:46:23Z","fr_due_by":"2016-03-16T21:46:23Z","is_escalated":false,"tags":[],"attachments":[]}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 21:46:23 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 21:56:21 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2994'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - cff49681d7a8ec1569e179d9b4d97524
+      Content-Length:
+      - '330'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"cc_emails":[],"fwd_emails":[],"reply_cc_emails":[],"email_config_id":null,"fr_escalated":false,"group_id":null,"priority":1,"requester_id":9007025965,"responder_id":null,"source":2,"spam":false,"status":2,"subject":"testing
+        the api","company_id":null,"id":4,"type":null,"to_emails":null,"product_id":null,"created_at":"2016-03-15T21:46:23Z","updated_at":"2016-03-15T21:46:23Z","due_by":"2016-03-18T21:46:23Z","fr_due_by":"2016-03-16T21:46:23Z","is_escalated":false,"description":"I
+        am testing the api","description_html":"<div>I am testing the api</div>","custom_fields":{},"tags":[],"attachments":[]}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 21:56:21 GMT
+- request:
+    method: put
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets/4
+    body:
+      encoding: UTF-8
+      string: '{"description":"I am an updated description"}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 22:00:32 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2993'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - af8fcec8f38260368aefb50d44a58615
+      Content-Length:
+      - '337'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"cc_emails":[],"fwd_emails":[],"reply_cc_emails":[],"description":"I
+        am an updated description","description_html":"<div>I am an updated description</div>","spam":false,"email_config_id":null,"fr_escalated":false,"group_id":null,"priority":1,"requester_id":9007025965,"responder_id":null,"source":2,"status":2,"subject":"testing
+        the api","company_id":null,"custom_fields":{},"id":4,"type":null,"to_emails":null,"product_id":null,"attachments":[],"is_escalated":false,"tags":[],"created_at":"2016-03-15T21:46:23Z","updated_at":"2016-03-15T21:46:23Z","due_by":"2016-03-18T21:46:23Z","fr_due_by":"2016-03-16T21:46:23Z"}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 22:00:32 GMT
+- request:
+    method: delete
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Date:
+      - Tue, 15 Mar 2016 22:04:57 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 204 No Content
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2992'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 62cefd6742ce65dfed5dba6543191d3e
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 22:04:57 GMT
+- request:
+    method: put
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets/4/restore
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Date:
+      - Tue, 15 Mar 2016 22:43:48 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 204 No Content
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
       - '2999'
       X-Ratelimit-Total:
       - '3000'
       X-Ratelimit-Used-Currentrequest:
       - '1'
       X-Request-Id:
-      - 961350fc971674a7f16e82961fc66d5e
+      - 18b2224f136f0bd43e6117fd16fd6cbc
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 22:43:48 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets/4/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 22:47:56 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2997'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - df0da3342b1ad7c1efab966432445e70
       Content-Length:
       - '33'
       Connection:
@@ -53,5 +372,128 @@ http_interactions:
       encoding: ASCII-8BIT
       string: "[]"
     http_version: 
-  recorded_at: Tue, 15 Mar 2016 04:02:54 GMT
+  recorded_at: Tue, 15 Mar 2016 22:47:56 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/ticket_fields
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 22:53:47 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2996'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - fe69d5e99361ed67b7fe3f3bb76393fe
+      Content-Length:
+      - '954'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":9000453480,"default":true,"description":"Ticket requester","label":"Requester","name":"requester","position":0,"required_for_closure":false,"portal_cc":false,"portal_cc_to":"company","type":"default_requester","required_for_agents":true,"required_for_customers":true,"label_for_customers":"Requester","customers_can_edit":true,"displayed_to_customers":true,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"id":9000453481,"default":true,"description":"Ticket
+        subject","label":"Subject","name":"subject","position":1,"required_for_closure":false,"type":"default_subject","required_for_agents":true,"required_for_customers":true,"label_for_customers":"Subject","customers_can_edit":true,"displayed_to_customers":true,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"id":9000453482,"default":true,"description":"Ticket
+        type","label":"Type","name":"ticket_type","position":2,"required_for_closure":false,"type":"default_ticket_type","required_for_agents":false,"required_for_customers":false,"label_for_customers":"Type","customers_can_edit":false,"displayed_to_customers":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z","choices":["Question","Incident","Problem","Feature
+        Request","Lead"]},{"id":9000453483,"default":true,"description":"Ticket source","label":"Source","name":"source","position":3,"required_for_closure":false,"type":"default_source","required_for_agents":false,"required_for_customers":false,"label_for_customers":"Source","customers_can_edit":false,"displayed_to_customers":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z","choices":{"Email":1,"Portal":2,"Phone":3,"Forum":4,"Twitter":5,"Facebook":6,"Chat":7,"MobiHelp":8,"Feedback
+        Widget":9,"Outbound Email":10,"Ecommerce":11}},{"id":9000453484,"default":true,"description":"Ticket
+        status","label":"Status","name":"status","position":4,"required_for_closure":false,"type":"default_status","required_for_agents":true,"required_for_customers":false,"label_for_customers":"Status","customers_can_edit":false,"displayed_to_customers":true,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z","choices":{"2":["Open","Being
+        Processed"],"3":["Pending","Awaiting your Reply"],"4":["Resolved","This ticket
+        has been Resolved"],"5":["Closed","This ticket has been Closed"],"6":["Waiting
+        on Customer","Awaiting your Reply"],"7":["Waiting on Third Party","Being Processed"]}},{"id":9000453485,"default":true,"description":"Ticket
+        priority","label":"Priority","name":"priority","position":5,"required_for_closure":false,"type":"default_priority","required_for_agents":true,"required_for_customers":false,"label_for_customers":"Priority","customers_can_edit":false,"displayed_to_customers":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z","choices":{"Low":1,"Medium":2,"High":3,"Urgent":4}},{"id":9000453486,"default":true,"description":"Ticket
+        group","label":"Group","name":"group","position":6,"required_for_closure":false,"type":"default_group","required_for_agents":false,"required_for_customers":false,"label_for_customers":"Group","customers_can_edit":false,"displayed_to_customers":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z","choices":{"Product
+        Management":9000142352,"QA":9000142353,"Sales":9000142354}},{"id":9000453487,"default":true,"description":"Agent","label":"Assigned
+        to","name":"agent","position":7,"required_for_closure":false,"type":"default_agent","required_for_agents":false,"required_for_customers":false,"label_for_customers":"Assigned
+        to","customers_can_edit":false,"displayed_to_customers":true,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z","choices":{"Sam
+        Duke":9007025965}},{"id":9000453489,"default":true,"description":"Ticket description","label":"Description","name":"description","position":9,"required_for_closure":false,"type":"default_description","required_for_agents":true,"required_for_customers":true,"label_for_customers":"Description","customers_can_edit":true,"displayed_to_customers":true,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"}]'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 22:53:47 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets/4/time_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 22:53:48 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 403 Forbidden
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2995'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - a3aa93245f2d2784c7c27dbf5791b49d
+      Content-Length:
+      - '134'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":"require_feature","message":"The Timesheets feature is not
+        supported in your plan. Please upgrade your account to use it."}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 22:53:48 GMT
 recorded_with: VCR 3.0.1

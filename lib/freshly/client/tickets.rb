@@ -6,8 +6,9 @@ module Freshly
         paginate "tickets", options
       end
 
-      def ticket options={}
-        get "ticket", options
+      def ticket id, options={}
+        ticket = Freshly::Ticket.new(id)
+        get "#{ticket.path}", options
       end
 
       def create_ticket options={}
@@ -29,14 +30,13 @@ module Freshly
         put "#{ticket.path}/restore", options
       end
 
-      def reply_to_ticket id, options={}
-        ticket = Ticket.new(id)
-        post "#{ticket.path}/reply", options
+      def ticket_fields options={}
+        get "ticket_fields", options
       end
 
-      def ticket_notes id, options={}
+      def ticket_converstaions id, options={}
         ticket = Ticket.new(id)
-        paginate "#{ticket.path}/notes", options
+        paginate "#{ticket.path}/conversations", options
       end
 
       def ticket_time_entries id, options={}

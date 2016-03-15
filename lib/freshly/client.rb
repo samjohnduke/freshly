@@ -1,5 +1,8 @@
 require "freshly/connection"
 require "freshly/configurable"
+
+require "freshly/ticket"
+
 require "freshly/client/tickets"
 
 module Freshly

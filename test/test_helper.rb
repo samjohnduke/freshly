@@ -8,6 +8,7 @@ require 'vcr'
 VCR.configure do |c|
   c.cassette_library_dir = "test/fixtures"
   c.hook_into :webmock
+  c.default_cassette_options = { :record => :new_episodes}
 
   c.filter_sensitive_data("<API_KEY>") do
     test_api_key
@@ -15,5 +16,5 @@ VCR.configure do |c|
 end
 
 def test_api_key
-  ENV["API_KEY"]
+  ENV["FRESHLY_API_KEY"] || "X"
 end

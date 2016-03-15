@@ -17,6 +17,7 @@ module Freshly
     # Default Faraday middleware stack
     MIDDLEWARE = RACK_BUILDER_CLASS.new do |builder|
       builder.use Freshly::Response::RaiseError
+      builder.request :json
       builder.response :json, :content_type => /\bjson$/
       builder.adapter Faraday.default_adapter
     end

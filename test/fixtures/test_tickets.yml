@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Mar 2016 04:02:54 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2999'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 961350fc971674a7f16e82961fc66d5e
+      Content-Length:
+      - '33'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 04:02:54 GMT
+recorded_with: VCR 3.0.1

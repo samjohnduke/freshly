@@ -3,6 +3,9 @@
 
 Freshly is a Ruby API wrapper for the Freshdesk API v2
 
+## BETA
+The API that sits behind this library is currently in a beta form and as such may change and any notice. Please do not use this in production unless you understand the risks of using it.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -21,7 +24,8 @@ Or install it yourself as:
 
 ## Usage
 
-Create a new API client using your Freshdesk API key
+Create a new API client using your Freshdesk API key and your api endpoint
+(the login url eg. https://skylarklabs.freshdesk.com)
 
 ```
 client = Freshly::Client.new api_key: {api_key}, api_endpoint: {api_endpoint}

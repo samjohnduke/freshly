@@ -21,4 +21,9 @@ class AgentsTest < Minitest::Test
     refute_nil response
   end
 
+  def test_can_get_me
+    response = @client.me
+    refute_nil response
+  end
+
 end

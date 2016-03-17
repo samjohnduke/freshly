@@ -111,4 +111,59 @@ http_interactions:
         sam","phone":null,"time_zone":"Hobart","created_at":"2016-03-17T07:27:36Z","updated_at":"2016-03-17T07:38:08Z"}}'
     http_version: 
   recorded_at: Thu, 17 Mar 2016 21:21:00 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/agents/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 21:34:38 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2993'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - b4e8e46a0cb9802e2927bb1d26a1776f
+      Content-Length:
+      - '317'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"available":true,"occasional":false,"signature_html":"<p><br></p>\r\n","id":9007025965,"ticket_scope":1,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-03-17T21:19:36Z","available_since":null,"contact":{"active":true,"email":"sam@skylarklabs.com","job_title":"","language":"en","last_login_at":"2016-03-14T02:09:34Z","mobile":null,"name":"Sam
+        Duke","phone":"+61417501433","time_zone":"Hobart","created_at":"2016-02-09T21:13:25Z","updated_at":"2016-03-15T21:47:26Z"}}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 21:34:38 GMT
 recorded_with: VCR 3.0.1

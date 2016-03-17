@@ -1,0 +1,385 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/contacts/9007933069
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 07:34:44 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2997'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 817bc32bd93b130d47e48d0044259632
+      Content-Length:
+      - '256'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"active":false,"address":null,"company_id":null,"description":null,"email":"tartarus.mail@gmail.com","id":9007933069,"job_title":null,"language":"en","mobile":null,"name":"sam","phone":null,"time_zone":"Hobart","twitter_id":null,"other_emails":[],"created_at":"2016-03-17T07:27:36Z","updated_at":"2016-03-17T07:29:36Z","custom_fields":{},"tags":[],"avatar":null}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 07:34:44 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/contacts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 07:34:57 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2996'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 6b25ab65e3cce22a2cc19239f1928ed9
+      Content-Length:
+      - '307'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"active":false,"address":null,"company_id":null,"description":null,"email":"tartarus.mail@gmail.com","id":9007933069,"job_title":null,"language":"en","mobile":null,"name":"sam","phone":null,"time_zone":"Hobart","twitter_id":null,"custom_fields":{},"created_at":"2016-03-17T07:27:36Z","updated_at":"2016-03-17T07:29:36Z"},{"active":false,"address":null,"company_id":null,"description":null,"email":"forwarding-noreply@google.com","id":9007026057,"job_title":null,"language":"en","mobile":null,"name":"Skylark
+        Labs Team","phone":null,"time_zone":"Hobart","twitter_id":null,"custom_fields":{},"created_at":"2016-02-09T21:19:47Z","updated_at":"2016-02-09T21:24:47Z"}]'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 07:34:57 GMT
+- request:
+    method: put
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/contacts/9007933069
+    body:
+      encoding: UTF-8
+      string: '{"name":"not sam"}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 07:36:33 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2995'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 83deafeb318fa417320c4f287c274fce
+      Content-Length:
+      - '269'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"active":false,"address":null,"company_id":null,"deleted":false,"description":null,"email":"tartarus.mail@gmail.com","id":9007933069,"job_title":null,"language":"en","mobile":null,"name":"not
+        sam","phone":null,"time_zone":"Hobart","twitter_id":null,"custom_fields":{},"tags":[],"other_emails":[],"created_at":"2016-03-17T07:27:36Z","updated_at":"2016-03-17T07:36:33Z","avatar":null}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 07:36:33 GMT
+- request:
+    method: put
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/contacts/9007933069/make_agent
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 07:38:08 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2994'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 443b60864541d7eac64bfa34600a34c5
+      Content-Length:
+      - '273'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"active":false,"email":"tartarus.mail@gmail.com","job_title":null,"language":"en","last_login_at":null,"mobile":null,"name":"not
+        sam","phone":null,"time_zone":"Hobart","created_at":"2016-03-17T07:27:36Z","updated_at":"2016-03-17T07:38:08Z","agent":{"available_since":null,"available":true,"occasional":false,"signature":null,"signature_html":null,"id":9007933069,"ticket_scope":1,"created_at":"2016-03-17T07:38:08Z","updated_at":"2016-03-17T07:38:08Z"}}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 07:38:08 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/contact_fields
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 08:10:40 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2992'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 64c993b68cb4841f3e5094a8f7b97c2c
+      Content-Length:
+      - '623'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"editable_in_signup":true,"id":9000576634,"label":"Full Name","name":"name","position":1,"type":"default_name","default":true,"customers_can_edit":true,"label_for_customers":"Full
+        Name","required_for_customers":true,"displayed_for_customers":true,"required_for_agents":true,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"editable_in_signup":false,"id":9000576635,"label":"Title","name":"job_title","position":2,"type":"default_job_title","default":true,"customers_can_edit":true,"label_for_customers":"Title","required_for_customers":false,"displayed_for_customers":true,"required_for_agents":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"editable_in_signup":true,"id":9000576636,"label":"Email","name":"email","position":3,"type":"default_email","default":true,"customers_can_edit":false,"label_for_customers":"Email","required_for_customers":false,"displayed_for_customers":true,"required_for_agents":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"editable_in_signup":false,"id":9000576637,"label":"Work
+        Phone","name":"phone","position":4,"type":"default_phone","default":true,"customers_can_edit":true,"label_for_customers":"Work
+        Phone","required_for_customers":false,"displayed_for_customers":true,"required_for_agents":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"editable_in_signup":false,"id":9000576638,"label":"Mobile
+        Phone","name":"mobile","position":5,"type":"default_mobile","default":true,"customers_can_edit":true,"label_for_customers":"Mobile
+        Phone","required_for_customers":false,"displayed_for_customers":true,"required_for_agents":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"editable_in_signup":false,"id":9000576639,"label":"Twitter","name":"twitter_id","position":6,"type":"default_twitter_id","default":true,"customers_can_edit":true,"label_for_customers":"Twitter","required_for_customers":false,"displayed_for_customers":true,"required_for_agents":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"editable_in_signup":false,"id":9000576640,"label":"Company","name":"company_name","position":7,"type":"default_company_name","default":true,"customers_can_edit":false,"label_for_customers":"Company","required_for_customers":false,"displayed_for_customers":true,"required_for_agents":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"editable_in_signup":false,"id":9000576641,"label":"Can
+        see all tickets from this company","name":"client_manager","position":8,"type":"default_client_manager","default":true,"customers_can_edit":false,"label_for_customers":"Can
+        see all tickets from this company","required_for_customers":false,"displayed_for_customers":false,"required_for_agents":false,"created_at":"2016-02-09T21:13:25Z","updated_at":"2016-02-09T21:13:25Z"},{"editable_in_signup":false,"id":9000576642,"label":"Address","name":"address","position":9,"type":"default_address","default":true,"customers_can_edit":false,"label_for_customers":"Address","required_for_customers":false,"displayed_for_customers":false,"required_for_agents":false,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"},{"editable_in_signup":false,"id":9000576645,"label":"Tags","name":"tag_names","position":12,"type":"default_tag_names","default":true,"customers_can_edit":false,"label_for_customers":"Tags","required_for_customers":false,"displayed_for_customers":false,"required_for_agents":false,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"},{"editable_in_signup":false,"id":9000576646,"label":"Background
+        information","name":"description","position":13,"type":"default_description","default":true,"customers_can_edit":false,"label_for_customers":"Background
+        information","required_for_customers":false,"displayed_for_customers":false,"required_for_agents":false,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"}]'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 08:10:40 GMT
+- request:
+    method: post
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/contacts
+    body:
+      encoding: UTF-8
+      string: '{"email":"tartarus.mail+t1@gmail.com","name":"sam"}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 21:23:49 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Location:
+      - https://skylarklabs.freshdesk.com/api/v2/contacts/9007948965
+      Pragma:
+      - no-cache
+      Status:
+      - 201 Created
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2996'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - ecdd958d74c3aa596a967ce531afa36a
+      Content-Length:
+      - '382'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"active":false,"address":null,"company_id":null,"deleted":false,"description":null,"email":"tartarus.mail+t1@gmail.com","id":9007948965,"job_title":null,"language":"en","mobile":null,"name":"sam","phone":null,"time_zone":"Hobart","twitter_id":null,"custom_fields":{},"tags":[],"other_emails":[],"created_at":"2016-03-17T21:23:49Z","updated_at":"2016-03-17T21:23:49Z","avatar":null}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 21:23:48 GMT
+- request:
+    method: delete
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/contacts/9007948965
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Date:
+      - Thu, 17 Mar 2016 21:25:46 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 204 No Content
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2994'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 59cee73acb139645d149d7b5b48b1a9d
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 21:25:45 GMT
+recorded_with: VCR 3.0.1

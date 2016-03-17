@@ -1,0 +1,269 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/groups
+    body:
+      encoding: UTF-8
+      string: '{"name":"test_group"}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 21:46:04 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Location:
+      - https://skylarklabs.freshdesk.com/api/v2/groups/9000161529
+      Pragma:
+      - no-cache
+      Status:
+      - 201 Created
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2992'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - a7e9b776bb7b994859b55754a5802029
+      Content-Length:
+      - '209'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":9000161529,"name":"test_group","description":null,"escalate_to":null,"unassigned_for":"30m","business_hour_id":null,"agent_ids":[],"created_at":"2016-03-17T21:46:04Z","updated_at":"2016-03-17T21:46:04Z"}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 21:46:05 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/groups/9000161529
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 21:48:00 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2991'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - f9991411ac425dba96a06091db915637
+      Content-Length:
+      - '172'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":9000161529,"name":"test_group","description":null,"escalate_to":null,"unassigned_for":"30m","business_hour_id":null,"created_at":"2016-03-17T21:46:04Z","updated_at":"2016-03-17T21:46:04Z","agent_ids":[]}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 21:48:01 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/groups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 21:48:32 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2990'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 7816dacbde0198916fc775a5b8defad8
+      Content-Length:
+      - '291'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":9000142352,"name":"Product Management","description":"Product
+        Management group","escalate_to":null,"unassigned_for":null,"business_hour_id":null,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"},{"id":9000142353,"name":"QA","description":"Members
+        of the QA team belong to this group","escalate_to":null,"unassigned_for":null,"business_hour_id":null,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"},{"id":9000142354,"name":"Sales","description":"People
+        in the Sales team are members of this group","escalate_to":null,"unassigned_for":null,"business_hour_id":null,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"},{"id":9000161529,"name":"test_group","description":null,"escalate_to":null,"unassigned_for":"30m","business_hour_id":null,"created_at":"2016-03-17T21:46:04Z","updated_at":"2016-03-17T21:46:04Z"}]'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 21:48:32 GMT
+- request:
+    method: put
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/groups/9000161529
+    body:
+      encoding: UTF-8
+      string: '{"name":"test"}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 21:50:13 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2989'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - f8f94794ab2f3c668d756374275845ff
+      Content-Length:
+      - '175'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":9000161529,"name":"test","description":null,"escalate_to":null,"unassigned_for":"30m","business_hour_id":null,"agent_ids":[],"created_at":"2016-03-17T21:46:04Z","updated_at":"2016-03-17T21:50:13Z"}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 21:50:14 GMT
+- request:
+    method: delete
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/groups/9000161529
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Date:
+      - Thu, 17 Mar 2016 21:51:15 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 204 No Content
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2988'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 8b5783abd6618fece9f0bd9fedf21dc5
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 21:51:15 GMT
+recorded_with: VCR 3.0.1

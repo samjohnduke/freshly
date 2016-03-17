@@ -1,0 +1,321 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/companies
+    body:
+      encoding: UTF-8
+      string: '{"name":"test_company"}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 22:31:33 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Location:
+      - https://skylarklabs.freshdesk.com/api/v2/companies/9000308527
+      Pragma:
+      - no-cache
+      Status:
+      - 201 Created
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2999'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 0bea2d7175f6090ce57f690bc38ec2e0
+      Content-Length:
+      - '174'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":9000308527,"name":"test_company","description":null,"note":null,"domains":[],"custom_fields":{},"created_at":"2016-03-17T22:31:33Z","updated_at":"2016-03-17T22:31:33Z"}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 22:31:33 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/companies
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 22:39:01 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2998'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 8d94858a18cb3fa8a670eb08d1105ccb
+      Content-Length:
+      - '151'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":9000308527,"name":"test_company","description":null,"note":null,"domains":[],"created_at":"2016-03-17T22:31:33Z","updated_at":"2016-03-17T22:31:33Z","custom_fields":{}}]'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 22:39:01 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/companies/9000308527
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 22:39:50 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2997'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 9106d69893ecf318181e5ce5575ce6bd
+      Content-Length:
+      - '155'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":9000308527,"name":"test_company","description":null,"domains":[],"note":null,"created_at":"2016-03-17T22:31:33Z","updated_at":"2016-03-17T22:31:33Z","custom_fields":{}}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 22:39:50 GMT
+- request:
+    method: put
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/companies/9000308527
+    body:
+      encoding: UTF-8
+      string: '{"name":"test"}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 23:01:00 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2996'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 9701a959d841893dfc6b98f2275f89d4
+      Content-Length:
+      - '154'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":9000308527,"name":"test","description":null,"note":null,"domains":[],"custom_fields":{},"created_at":"2016-03-17T22:31:33Z","updated_at":"2016-03-17T23:01:00Z"}'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 23:01:00 GMT
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/company_fields
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 17 Mar 2016 23:01:01 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2995'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 83418eb222729d36353b728efe31bf96
+      Content-Length:
+      - '274'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":9000178103,"name":"name","label":"Company name","position":1,"required_for_agent":true,"type":"default_name","default":true,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"},{"id":9000178104,"name":"description","label":"Description","position":2,"required_for_agent":false,"type":"default_description","default":true,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"},{"id":9000178105,"name":"note","label":"Notes","position":3,"required_for_agent":false,"type":"default_note","default":true,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"},{"id":9000178106,"name":"domains","label":"Domain
+        Names for this company","position":4,"required_for_agent":false,"type":"default_domains","default":true,"created_at":"2016-02-09T21:13:26Z","updated_at":"2016-02-09T21:13:26Z"}]'
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 23:01:02 GMT
+- request:
+    method: delete
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/companies/9000308527
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Date:
+      - Thu, 17 Mar 2016 23:20:42 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Status:
+      - 204 No Content
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Remaining:
+      - '2994'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 7a33239ce1171a1fac48c43277b18f3c
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 17 Mar 2016 23:20:42 GMT
+recorded_with: VCR 3.0.1

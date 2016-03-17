@@ -10,6 +10,7 @@ require "freshly/client/conversations"
 require "freshly/client/contacts"
 require "freshly/client/agents"
 require "freshly/client/groups"
+require "freshly/client/companies"
 
 module Freshly
   class Client
@@ -20,6 +21,7 @@ module Freshly
     include Freshly::Client::Contacts
     include Freshly::Client::Agents
     include Freshly::Client::Groups
+    include Freshly::Client::Companies
 
     def initialize opts={}
       Freshly::Configurable.keys.each do |key|

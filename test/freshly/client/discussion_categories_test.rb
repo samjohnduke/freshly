@@ -12,6 +12,7 @@ class DiscussionCategoriesTest < Minitest::Test
   end
 
   def test_can_create_category
+    skip("cannot test, do not have permission")
     cat = {
       name: "test_api_category",
       description: 'testing the api'

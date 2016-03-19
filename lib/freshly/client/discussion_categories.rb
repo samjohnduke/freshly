@@ -2,11 +2,11 @@ module Freshly
   class Client
     module DiscussionCategories
       def create_category opts={}
-        post "dicussions/categories"
+        post "discussions/categories"
       end
 
       def category id, opts={}
-        get "dicussions/categories/#{id}", opts
+        get "discussions/categories/#{id}", opts
       end
 
       def categories opts={}
@@ -14,7 +14,7 @@ module Freshly
       end
 
       def edit_category id, opts={}
-        put "dicussions/categories/#{id}", opts
+        put "discussions/categories/#{id}", opts
       end
 
       def delete_category id, opts={}

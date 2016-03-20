@@ -15,6 +15,7 @@ require "freshly/client/discussion_categories"
 require "freshly/client/discussion_forums"
 require "freshly/client/discussion_topics"
 require "freshly/client/discussion_comments"
+require "freshly/client/solutions"
 
 module Freshly
   class Client
@@ -30,6 +31,7 @@ module Freshly
     include Freshly::Client::DiscussionForums
     include Freshly::Client::DiscussionTopics
     include Freshly::Client::DiscussionComments
+    include Freshly::Client::Solutions
 
     def initialize opts={}
       Freshly::Configurable.keys.each do |key|

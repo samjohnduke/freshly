@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<API_KEY>:X@skylarklabs.freshdesk.com/api/v2/tickets/333
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Freshly 0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Mar 2016 07:43:17 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - helpdesk_node_session=a81012ef23e2baf2abbe3eddb4275b1bdcb40527ebff550f7e8a48d984d44915ff265bb77a3fc6972f83a6f7f3a3b0ac66174755b8141e5b80c383489aaeafa9;
+        path=/
+      Status:
+      - 404 Not Found
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '2999'
+      X-Ratelimit-Total:
+      - '3000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 3febdd6602ccc63113e85ce6b28eab42
+      Content-Length:
+      - '32'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: " "
+    http_version: 
+  recorded_at: Tue, 22 Mar 2016 07:43:17 GMT
+recorded_with: VCR 3.0.1

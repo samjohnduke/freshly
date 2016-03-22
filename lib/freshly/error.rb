@@ -34,8 +34,59 @@ module Freshly
       super(build_error_message)
     end
 
+    def errors
+      if data && data.is_a?(Hash)
+        data["errors"] || []
+      else
+        []
+      end
+    end
+
+    private
+
     def build_error_message
-      "something went wrong"
+      return nil if @response.nil?
+
+      message =  "#{@response['method'].to_s.upcase} "
+      message << "#{@response['url'].to_s}: "
+      message << "#{@response['status']}"
+      message << " - #{response_message}" unless response_message.nil?
+      message << " - #{response_error}" unless response_error.nil?
+      message << " - #{response_error_summary}" unless response_error_summary.nil?
+      message
+    end
+
+    def data
+      @data ||=
+        if response["body"]
+          response["body"]
+        else
+          nil
+        end
+    end
+
+    def response_message
+      case data
+      when Hash
+        data["message"]
+      when String
+        data
+      end
+    end
+
+    def response_error
+      "Error: #{data['error']}" if data.is_a?(Hash) && data['error']
+    end
+
+    def response_error_summary
+      return nil unless data.is_a?(Hash) && !Array(data["errors"]).empty?
+
+      summary = "\nError summary:\n"
+      summary << data["errors"].map do |hash|
+        hash.map { |k,v| "  #{k}: #{v}" }
+      end.join("\n")
+
+      summary
     end
   end
 

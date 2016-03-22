@@ -13,7 +13,7 @@ class ErrorsTest < Minitest::Test
 
   def test_handles_404_errors
     err = assert_raises (Freshly::NotFound) { @client.ticket 333 }
-    assert_equal err.message, "something went wrong"
+    assert_equal err.message, "GET https://skylarklabs.freshdesk.com/api/v2/tickets/333: 404"
   end
 
 end

@@ -1,5 +1,5 @@
 # Freshly
-[![Build Status](https://travis-ci.org/samjohnduke/freshly.svg?branch=master)](https://travis-ci.org/samjohnduke/freshly)
+[![Build Status](https://travis-ci.org/samjohnduke/freshly.svg?branch=master)](https://travis-ci.org/samjohnduke/freshly) [![Gem Version](https://badge.fury.io/rb/freshly.svg)](https://badge.fury.io/rb/freshly)
 
 Freshly is a Ruby API wrapper for the Freshdesk API v2
 

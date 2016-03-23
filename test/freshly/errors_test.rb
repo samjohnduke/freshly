@@ -16,4 +16,9 @@ class ErrorsTest < Minitest::Test
     assert_equal err.message, "GET https://skylarklabs.freshdesk.com/api/v2/tickets/333: 404"
   end
 
+  def test_provides_errors_list
+      err = assert_raises (Freshly::BadRequest) { @client.create_ticket }
+      assert_equal err.errors.length, 5
+  end
+
 end
